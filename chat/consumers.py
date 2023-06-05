@@ -16,7 +16,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
         await self.channel_layer.group_send(
             self.room_group_name,
             {
-                "type": "chat.join",
+                "type": "chat_join",
                 "message": f"{self.scope['user'].username} joined the chat",
                 "user": "admin",
                 "room": f"{self.room_name}",
@@ -28,7 +28,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
         await self.channel_layer.group_send(
             self.room_group_name,
             {
-                "type": "chat.leave",
+                "type": "chat_leave",
                 "message": f"{self.scope['user'].username} leaved the chat",
                 "user": "admin",
                 "room": f"{self.room_name}",
@@ -44,7 +44,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
         await self.channel_layer.group_send(
             self.room_group_name,
             {
-                "type": "chat.message",
+                "type": "chat_message",
                 "message": message,
                 "user": username,
                 "room": room,
