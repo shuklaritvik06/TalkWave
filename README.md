@@ -1,5 +1,8 @@
 # TalkWave
 
+![2023-05-31_EQ4jqfcbWY_the-power-of-websocket-revolutionizing-real-time-communication-on-theweb-bannerImg](https://github.com/shuklaritvik06/TalkWave/assets/72812470/48978374-1bed-4728-9b53-35a428c3380c)
+
+
 Welcome to ChatterBox! This repository contains the code and resources for TalkWave, a chat app built using Django. This README file provides an overview of the app's features and guides you on how to set it up and start chatting with others.
 
 
